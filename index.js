@@ -15,8 +15,6 @@ import Config from './src/config';
 // import App from './src/App';
 import { StackNavigator } from 'react-navigation';
 
-
 export const AppNavigator = StackNavigator(Config.navigation);
 AppRegistry.registerComponent(appName, () => AppNavigator);
-
 // AppRegistry.registerComponent(appName, () => App);

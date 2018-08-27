@@ -10,10 +10,6 @@ import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, AppRegistry } from 'react-native';
 import { Header, Icon } from 'react-native-elements';
 import { StackNavigator } from 'react-navigation';
-import Config from './config';
-
-export const AppNavigator = StackNavigator(Config.navigation);
-AppRegistry.registerComponent('appName', () => AppNavigator);
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
