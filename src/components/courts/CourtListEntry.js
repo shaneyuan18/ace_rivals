@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { Button, Header } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import CourtListEntry from './CourtListEntry';
-class CourtList extends React.Component {
+class CourtListEntry extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,4 +41,4 @@ class CourtList extends React.Component {
   }
 }
 
-export default CourtList;
+export default CourtListEntry;

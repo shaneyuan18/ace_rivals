@@ -34,7 +34,7 @@ class SignUpScreen extends React.Component {
     return {
       id: 1,
       name: 'Shane Yuan',
-      rating: '4.0',
+      rating: 4,
     }
   }
   render() {

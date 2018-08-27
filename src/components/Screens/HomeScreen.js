@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import { Button } from 'react-native-elements';
+import { Button, Header } from 'react-native-elements';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 class HomeScreen extends React.Component {
   constructor(props) {
@@ -15,12 +16,23 @@ class HomeScreen extends React.Component {
   render() {
     return (
       <View>
-        <Button
-          title="Get Started!!!"
-          onPress={() => this.props.navigation.navigate('Settings')}
-        />
+        <Header>
+          <Icon
+            name='user'
+            color='white'
+            size={20}
+          />
+          <Text style={{color: 'white', fontSize: 18, textAlign: 'center'}}>Courts Around You</Text>
+          <Icon
+            name='comment'
+            color='#fff'
+            size={20}
+          />
+        </Header>
+
       </View>
     );
   }
 }
+
 export default HomeScreen;
