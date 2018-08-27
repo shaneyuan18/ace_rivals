@@ -17,8 +17,6 @@ class SignUpScreen extends React.Component {
 
   }
   render() {
-    console.log('asdasdasfasfasf')
-    console.log(Input)
     return (
       <View>
         <Input errorMessage={'This field is required'}
