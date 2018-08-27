@@ -29,7 +29,10 @@ class SignUpScreen extends React.Component {
         <Input label={'Address'}
           placeholder={'Street 1'}
         />
-
+        <Button
+          title="Sign Up"
+          onPress={() => this.props.navigation.navigate('Home')}
+        />
       </View>
     );
   }
