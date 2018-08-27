@@ -1,7 +1,7 @@
-import HomeScreen from "./HomeScreen";
-import SettingsScreen from "./SettingsScreen";
-import SplashScreen from "./SplashScreen";
-import SignUpScreen from './SignUpScreen';
+import HomeScreen from "./components/Screens/HomeScreen";
+import SettingsScreen from "./components/Screens/SettingsScreen";
+import SplashScreen from "./components/Screens/SplashScreen";
+import SignUpScreen from './components/Screens/SignUpScreen';
 
 const Config = {
   navigation: {
