@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { Button, Header } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import CourtList from '../courts/CourtList';
 
 class HomeScreen extends React.Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class HomeScreen extends React.Component {
             size={20}
           />
         </Header>
-
+        <CourtList />
       </View>
     );
   }

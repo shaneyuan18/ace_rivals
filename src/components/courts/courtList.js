@@ -30,6 +30,8 @@ class CourtList extends React.Component {
   }
 
   render() {
+    console.log('safuigqwuyfgqwyufguqywgf')
+    console.log(this.props)
     return (
       <View>
         {this.state.courtList.map((court, idx) => {
