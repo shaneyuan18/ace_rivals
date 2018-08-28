@@ -10,10 +10,10 @@ class SplashScreen extends React.Component {
   }
 
   componentWillMount() {
-    var navigator = this.props.navigation;
-    setTimeout(() => {
-      navigator.navigate('SignUp');
-    }, 3000);
+    // var navigator = this.props.navigation;
+    // setTimeout(() => {
+    //   navigator.navigate('SignUp');
+    // }, 3000);
   }
 
   render() {

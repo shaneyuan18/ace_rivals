@@ -2,6 +2,7 @@ import HomeScreen from "./components/Screens/HomeScreen";
 import SettingsScreen from "./components/Screens/SettingsScreen";
 import SplashScreen from "./components/Screens/SplashScreen";
 import SignUpScreen from './components/Screens/SignUpScreen';
+import CourtScreen from './components/Screens/CourtScreen';
 
 const Config = {
   navigation: {
@@ -19,7 +20,10 @@ const Config = {
     },
     Settings: {
       screen: SettingsScreen,
-    }
+    },
+    Court: {
+      screen: CourtScreen,
+    },
   }
 }
 

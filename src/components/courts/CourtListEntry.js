@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import { Button, Header } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 class CourtListEntry extends React.Component {
@@ -9,21 +9,23 @@ class CourtListEntry extends React.Component {
       
     };
   }
-
   render() {
+    const { court, showCourtScreen } = this.props;
     return (
       <View style={styles.outerContainer}>
-        <View style={styles.container}>
+        <TouchableOpacity 
+          style={styles.container}
+          onPress={() => {showCourtScreen(court)}}>
           <View>
             <Image
               style={{width: 150, height: 150}}
-              source={{uri: this.props.court.imageURL}}
+              source={{uri: court.imageURL}}
             />
           </View>
           <View>
-            <Text>hello</Text>
+            <Text>{court.name}</Text>
           </View>
-        </View>
+        </TouchableOpacity>
       </View>
     );
   }

@@ -10,11 +10,15 @@ class HomeScreen extends React.Component {
     // this.state = {
     // };
   }
+  showCourtScreen(court) {
+    this.props.navigation.navigate('Court', { court });
+  }
 
   componentDidMount() {
-
+    
   }
   render() {
+    const { navigation } = this.props;
     return (
       <View>
         <Header>
@@ -30,7 +34,7 @@ class HomeScreen extends React.Component {
             size={20}
           />
         </Header>
-        <CourtList />
+        <CourtList showCourtScreen={this.showCourtScreen.bind(this)}/>
       </View>
     );
   }

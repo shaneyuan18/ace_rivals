@@ -54,9 +54,9 @@ class SignUpScreen extends React.Component {
           selectedValue={this.state.rating}
           style={{ height: 50, width: 1000, margin: 12 }}
           onValueChange={(itemValue, itemIndex) => this.setState({rating: itemValue})}>
-          {NTPRratings.map((rating) => {
+          {NTPRratings.map((rating, idx) => {
             return (
-              <Picker.Item label={rating.name} value={rating.value} />
+              <Picker.Item key={idx} label={rating.name} value={rating.value} />
             )
           })}
         </Picker>
